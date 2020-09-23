@@ -7,7 +7,7 @@ vim-for-server
 
 This repository is a simplified version of [k-vim](https://github.com/wklken/k-vim)
 
-Just remove all plugins, keep basic config.
+Just remove most plugins, keep basic NerdTree config.
 
 # Screenshot
 
