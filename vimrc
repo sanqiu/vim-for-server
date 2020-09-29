@@ -1,14 +1,3 @@
-"==========================================
-" ProjectLink: https://github.com/wklken/vim-for-server
-" Author:  wklken
-" Version: 0.2
-" Email: wklken@yeah.net
-" BlogPost: http://www.wklken.me
-" Donation: http://www.wklken.me/pages/donation.html
-" ReadMe: README.md
-" Last_modify: 2015-07-07
-" Desc: simple vim config for server, without any plugins.
-"==========================================
 ""Plugin settings
   
 set nocompatible              " be iMproved, required
@@ -16,17 +5,17 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 " for windows mkdir in user home: .vim, and set
-" set rtp+=$HOME/.vim/bundle/Vundle.vim
- set rtp+=~/.vim/bundle/Vundle.vim
- call vundle#begin()
+" set rtp+=$HOME/.vim/autoload/plug.vim
+ set rtp+=~/.vim/autoload/plug.vim
+ call plug#begin('~/.vim/plugged')
  " " alternatively, pass a path where Vundle should install plugins
 " "call vundle#begin('~/some/path/here')
 "
-"first git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim 
-"let Vundle manage Vundle, required
- Plugin 'gmarik/Vundle.vim'
- Plugin 'scrooloose/nerdtree'
- call vundle#end()   
+"first get https://github.com/junegunn/vim-plug/blob/master/plug.vim to .vim/autoload/
+
+ Plug 'scrooloose/nerdtree'
+ 
+ call plug#end()   
   
   
 " filetype
